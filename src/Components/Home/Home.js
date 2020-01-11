@@ -10,7 +10,7 @@ function Home(){
             </div>
 
             <div className='browse'>
-                <h1></h1>
+                <h1>Browse Categories</h1>
                 <div className=""></div>
                 <div className=""></div>
                 <div className=""></div>
@@ -18,32 +18,35 @@ function Home(){
             </div>
 
             <div className='pop_posters'>
-            <h1></h1>
+                <h1>Popular Food Contibutors</h1>
                 <div className=""></div>
                 <div className=""></div>
                 <div className=""></div>
             </div>
 
             <div className='about'>
-                <h1></h1>
+                <h1>About</h1>
                 <div className=""></div>
                 <div className=""></div>
             </div>
 
             <div className='tstmony'>
-            <h1></h1>
+                <h1>Testimonials</h1>
                 <div className=""></div>
                 <div className=""></div>
             </div>
 
             <div className='theNumbers'>
-                <h1></h1>
+                <h1>Our progress by the Numbers</h1>
                 <div className=""></div>
                 <div className=""></div>
             </div>
 
             <div className='creators'>
-
+                <h1>Behind the Mission</h1>
+                <div className=""></div>
+                <div className=""></div>
+                <div className=""></div>
             </div>
         </div>
     )
