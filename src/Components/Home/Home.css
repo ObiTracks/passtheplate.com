@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+div{
+    min-width: 200px;
+    min-height: 200px;
+    border: solid blue;
+}
+h1{
+    min-height: 9vh;
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+    border: solid cyan 2px;
+}
+/* 
+The hompage container
+ */
+.home{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    border: solid rgb(153, 0, 255) 2px;
+}
+.home h1{
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+The landing page 
+*/
+.intro{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red 2px;
+}
+
+/* 
+A banner to quickly browse categories
+ */
+.browse{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red 2px;
+}
+
+/* 
+ A banner to quickly show popular
+ customers on the platform
+*/
+.pop_posters{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red 2px;
+}
+
+/* 
+The about the website section
+ */
+
+.about{
+    width: 100%;
+    height: 50vh;
+    border: solid red 2px;
+}
+
+/* 
+The testimonials section
+ */
+.tstmony{
+    width: 100%;
+    height: 70vh;
+    min-height: 70vh;
+    border: solid red 2px;
+}
+
+/* 
+A banner showing some numbers produced by our platform
+ */
+.theNumbers{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red 2px;
+}
+
+/* 
+About the creator(s) section
+ */
+.creators{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red 2px;
+}
