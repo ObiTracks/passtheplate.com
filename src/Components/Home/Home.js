@@ -6,7 +6,23 @@ function Home(){
         <div className='home'>
             <div className='intro'>
                 <h1>Explore a range of food items</h1>
-                <div className="srch_bar"></div>
+                <div className="srch_bar">
+
+                    <div className="srch">What are you looking for?</div>
+                    <div className="menu_cont" id="category">
+                        <button onClick="myFunction" className="btn">Categories</button>
+                        <div className="content" id="myDropdown">
+                            <a>Vegetables</a>
+                            <a>Fruits</a>
+                            <a>Dried Goods</a>
+                            <a>Beverages</a>
+                        </div>
+                    </div>
+
+                    <div className="srch_btn">Search</div>
+                </div>
+
+            
             </div>
 
             <div className='browse'>
@@ -48,8 +64,29 @@ function Home(){
                 <div className=""></div>
                 <div className=""></div>
             </div>
+
+            
         </div>
     )
 }
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.btn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
 
 export default Home
