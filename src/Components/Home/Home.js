@@ -6,20 +6,31 @@ function Home(){
         <div className='home'>
             <div className='intro'>
                 <h1>Explore a range of food items</h1>
-                <div className="srch_bar">
+                <div className="search_bar">
+                    <div className="search">What are you looking for?</div>
+                    <nav>
+                        <nav>
+                            <button>Categories</button>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <button>Location</button>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                        </nav>
+                        
+                    </nav>
 
-                    <div className="srch">What are you looking for?</div>
-                    <div className="menu_cont" id="category">
-                        <button onClick="myFunction" className="btn">Categories</button>
-                        <div className="content" id="myDropdown">
-                            <a>Vegetables</a>
-                            <a>Fruits</a>
-                            <a>Dried Goods</a>
-                            <a>Beverages</a>
-                        </div>
-                    </div>
-
-                    <div className="srch_btn">Search</div>
+                    {/* <div className="srch_btn">Search</div> */}
                 </div>
 
             

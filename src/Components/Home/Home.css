@@ -49,21 +49,26 @@ The landing page
     border: solid red 2px;
     background-color: cyan;
 }
-.intro h1{
+.intro
+h1{
     width: 100%;
     height: 80px;
 }
-.intro .srch_bar{
-    width: 60%;
+.intro
+.search_bar{
+    width: 70%;
     height: 80px;
     display: flex;
     flex-direction: row;
+    background: white;
     border-radius: 40px;
-    border: solid blue;
+    border: solid black 2px;
     padding: 10px;
 }
-.intro .srch_bar .srch{
-    width: 60%;
+.intro 
+.search_bar 
+.search{
+    flex-grow: 4;
     height: 100%;
     display: flex;
     justify-content: left;
@@ -72,56 +77,79 @@ The landing page
     padding-left: 5%;
     border-radius: 40px;
 }
-.intro .srch_bar .menu_cont{
-    width: 15%;
+.intro 
+.search_bar
+nav{
+    flex-grow: 1;
+    /* float: left; */
+    position: relative;
+    /* width: 30%; */
+    display: flex;
+    flex-direction: row;
+    /* border: solid blue 2px; */
+}
+.intro 
+.search_bar
+nav nav{
+    position: relative;
+    width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
-    border: solid blue;
-    border-radius: 40px;
-    /* overflow: hidden; */
+    flex-wrap: wrap;
+    /* border: solid rgb(0, 226, 11) 2px; */
 }
-.intro .srch_bar .menu_cont .btn{
+.intro 
+.search_bar
+nav 
+nav button{
     width: 100%;
     height: 100%;
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 40px;
-
-  }
-.intro .srch_bar .menu_cont .content{
-    width: 100%;
-    border: solid green 3px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    background: white;
+    border: solid rgb(0, 97, 161) 2px;
 }
-.intro .srch_bar .menu_cont .content a{
+.intro 
+.search_bar
+nav 
+nav ul{
+    position: relative;
+    width: 100%;
+    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid rgb(226, 0, 151) 2px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.1s ease;
+}
+.intro 
+.search_bar
+nav 
+nav button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(10px);
+    
+}
+
+.intro 
+.search_bar
+nav 
+nav ul li{
     width: 100%;
     height: 40px;
-    color: green;
-    border: solid red 1px;
-    text-decoration: none;
-    display: block;
-  }
-.intro .srch_bar .srch_btn{
-    /* flex-grow: 2; */
-    width: 10%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
-    border: solid blue;
-    border-radius: 40px;
-    text-align: center;
+    justify-content: center;
+    background: white;
+    list-style: none;
+    /* border: solid rgb(235, 231, 4) 2px; */
+}
+.intro 
+.search_bar
+nav 
+nav ul li:hover{
+    background: rgb(189, 175, 175);
 }
 /* 
 A banner to quickly browse categories
