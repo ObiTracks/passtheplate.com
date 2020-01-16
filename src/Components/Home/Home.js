@@ -7,27 +7,27 @@ function Home(){
             <div className='intro'>
                 <h1>Explore a range of food items</h1>
                 <div className="search_bar">
-                    <div className="search">What are you looking for?</div>
+                    <a className="search"></a>
+                    {/* <a className="search">What are you looking for?</a> */}
                     <nav>
                         <nav>
-                            <button>Categories</button>
+                            <button></button>
                             <ul>
+                                {/* <li><a href="#">Home</a></li>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li> */}
                             </ul>
                         </nav>
                         <nav>
-                            <button>Location</button>
+                            <button></button>
                             <ul>
+                                {/* <li><a href="#">Home</a></li>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li> */}
                             </ul>
                         </nav>
-                        
                     </nav>
 
                     {/* <div className="srch_btn">Search</div> */}
@@ -45,7 +45,7 @@ function Home(){
             </div>
 
             <div className='pop_posters'>
-                <h1>Popular Food Contibutors</h1>
+                <h1>Popular Partners</h1>
                 <div className=""></div>
                 <div className=""></div>
                 <div className=""></div>
@@ -53,13 +53,12 @@ function Home(){
 
             <div className='about'>
                 <h1>About</h1>
-                <div className=""></div>
+                <div id="img"></div>
                 <div className=""></div>
             </div>
 
             <div className='tstmony'>
                 <h1>Testimonials</h1>
-                <div className=""></div>
                 <div className=""></div>
             </div>
 

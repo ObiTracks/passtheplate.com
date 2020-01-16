@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Prata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -14,8 +14,8 @@ body {
     font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Prata', serif;
-    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 h1{
     width: 100%;
@@ -24,7 +24,7 @@ h1{
     padding: 20px 20% 0 20%;
     align-self: center;
     margin: 0;
-    border: solid cyan 2px;
+    /* border: solid cyan 2px; */
 }
 /* 
 The hompage container
@@ -47,7 +47,9 @@ The landing page
     justify-content: center;
     align-items: center;
     border: solid red 2px;
-    background-color: cyan;
+    background: url('../../static/SiteWideBgs/main_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 .intro
 h1{
@@ -57,33 +59,33 @@ h1{
 .intro
 .search_bar{
     width: 70%;
+    max-width: 900px;
     height: 80px;
     display: flex;
     flex-direction: row;
     background: white;
+    box-shadow: rgba(7, 7, 7, 0.445) 0px 4px 15px;
     border-radius: 40px;
-    border: solid black 2px;
-    padding: 10px;
+    padding: 13px;
 }
 .intro 
 .search_bar 
 .search{
-    flex-grow: 4;
+    flex-grow: 3;
     height: 100%;
+    position: relative;
     display: flex;
     justify-content: left;
     align-items: center;
-    border: solid blue;
     padding-left: 5%;
-    border-radius: 40px;
+    /* border-bottom: solid blue; */
+    /* border-radius: 40px; */
 }
 .intro 
 .search_bar
 nav{
-    flex-grow: 1;
-    /* float: left; */
+    flex-grow: 2;
     position: relative;
-    /* width: 30%; */
     display: flex;
     flex-direction: row;
     /* border: solid blue 2px; */
@@ -104,8 +106,12 @@ nav
 nav button{
     width: 100%;
     height: 100%;
-    background: white;
-    border: solid rgb(0, 97, 161) 2px;
+    border: none;
+    border-left: solid rgb(197, 197, 197) 2px;
+    border-style: style;
+    background: none;
+    /* background: white; */
+    /* border: solid rgb(0, 97, 161) 2px; */
 }
 .intro 
 .search_bar
@@ -113,6 +119,7 @@ nav
 nav ul{
     position: relative;
     width: 100%;
+    min-height: 200px;
     display: none;
     display: flex;
     flex-wrap: wrap;
@@ -125,10 +132,11 @@ nav ul{
 .intro 
 .search_bar
 nav 
-nav button:focus + ul{
+nav button:focus + ul, button{
     opacity: 1;
     pointer-events: all;
-    transform: translateY(10px);
+    transform: translateY(0px);
+    border: solid green 2px;
     
 }
 
@@ -136,7 +144,7 @@ nav button:focus + ul{
 .search_bar
 nav 
 nav ul li{
-    width: 100%;
+    /* width: 100%; */
     height: 40px;
     display: flex;
     align-items: center;
@@ -157,17 +165,25 @@ A banner to quickly browse categories
 .browse{
     width: 100%;
     height: auto;
-    min-height: 30vh;
+    min-height: 35vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    border: solid red 2px;
+    /* border: solid red 2px; */
+    background: white;
 }
 .browse div{
-    min-width: 200px;
-    min-height: 200px;
-    border: solid blue;
+    width: 20vh;
+    height: 20vh;
+    background: url('../../static/SiteWideBgs/BreadFillerImg.jpeg');
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.521) 0 4px 10px;
+    /* background: #00ADAB; */
+    /* border: solid blue; */
+    border-radius: 40px;
+    margin: 0 20px 0 20px;
+
 }
 
 /* 
@@ -177,17 +193,26 @@ A banner to quickly browse categories
 .pop_posters{
     width: 100%;
     height: auto;
-    min-height: 40vh;
+    min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    border: solid red 2px;
+    background: rgb(240, 245, 245);
+    /* border: solid red 2px; */
 }
 .pop_posters div{
-    min-width: 200px;
-    min-height: 200px;
-    border: solid blue;
+    width: 40vh;
+    min-width: 40px;
+    height: 30vh;
+    /* border: solid blue; */
+    border-radius: 13px;
+    background: url('../../static/SiteWideBgs/sobeysLogo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.329) 0 0 20px;
+    margin: 10px 20px 10px 20px;
 }
 
 /* 
@@ -197,18 +222,31 @@ The about the website section
 .about{
     width: 100%;
     height: auto;
-    min-height: 60vh;
+    min-height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    
-    border: solid red 2px;
+    align-content: center;
+    /* border: solid red 2px; */
+    background: url('../../static/SiteWideBgs/cropBg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .about div{
     width: 40%;
     height: 40vh;
-    border: solid blue 2px;
+    /* border: solid blue 2px; */
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.911);
+    box-shadow: rgba(0, 0, 0, 0.425) 0 0 6px;
+    /* margin: 0 0px 0 10px; */
+}
+.about #img{
+    background: url('../../static//SiteWideBgs/aboutFillerImg.jpg');
+    background-size: cover;
+    background-position: center;
 }
 /* 
 The testimonials section
@@ -216,12 +254,13 @@ The testimonials section
 .tstmony{
     width: 100%;
     height: auto;
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    border: solid red 2px;
+    /* border: solid red 2px; */
+    background: rgb(240, 245, 245);
 }
 .tstmony div{
     width: 80%;
@@ -240,7 +279,7 @@ A banner showing some numbers produced by our platform
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: solid red 2px;
+    /* border: solid red 2px; */
 }
 .theNumbers div{
     width: 93%;
@@ -253,12 +292,12 @@ About the creator(s) section
 .creators{
     width: 100%;
     height: auto;
-    min-height: 40vh;
+    min-height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    border: solid red 2px;
+    align-content: center;
+    /* border: solid red 2px; */
 }
 .creators div{
     width: 25%;
